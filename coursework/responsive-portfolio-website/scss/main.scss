@@ -17,10 +17,11 @@ h3 {
   margin: 0;
   font-weight: 400;
   /*           x   y   blur color */
-  text-shadow: 2px 2px 1px $dark-shades-color;
+  text-shadow: 1px 1.5px 1px $dark-shades-color;
 
   &.lg-heading {
     font-size: 6rem;
+    color: $main-brand-color;
   }
 
   &.sm-heading {
@@ -36,7 +37,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: $light-accent-color;
+  color: $main-brand-color;
 }
 
 header {
@@ -59,7 +60,7 @@ main {
     a {
       padding: 0.4rem;
       &:hover {
-        color: $dark-accent-color;
+        color: $light-accent-color;
         @include easeOut;
       }
     }
