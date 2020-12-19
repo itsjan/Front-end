@@ -1,0 +1,38 @@
+$primary-color: #1e182a;
+$dark-shades-color: #1e182a;
+$dark-accent-color: #8f4e63;
+$main-brand-color: #7d5d7d;
+$light-accent-color: #6dcedf;
+$light-shades-color: #eff2f0;
+
+$show-home-image: true;
+$home-image: url("../img/mtfuji.jpeg");
+$background-opacity: 0.4;
+* {
+  box-sizing: border-box;
+}
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+
+@mixin background {
+  @if $show-home-image {
+    &#bg-img {
+      background-image: $home-image;
+      background-attachment: fixed;
+      background-size: cover;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($dark-shades-color, $background-opacity);
+        z-index: -1;
+      }
+    }
+  }
+}
