@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "quote";
 // Media queries to the bottom of the file:
 //@import "mobile";
 
@@ -14,9 +15,6 @@ body {
   line-height: 1.5;
 }
 
-i {
-  text-shadow: 1.5px 2px 1.5px $dark-shades-color;
-}
 h1,
 h2,
 h3 {
@@ -89,7 +87,7 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    "bioimage bio bio"
+    "bio bio bioimage"
     "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 
@@ -117,6 +115,51 @@ main {
     padding: 0.5rem;
     border-bottom: $dark-accent-color 5px solid;
   }
+}
+
+// Work projects
+
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+
+  /*                     " three times one fractional" */
+  grid-template-columns: repeat(3, 1fr);
+
+  .item {
+    // Idea for the zoom effect
+    // https://codepen.io/nxworld/pen/ZYNOBZ
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      transform: scale(1);
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        width: 100%;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+// Button Styles
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  &:hover {
+    background-color: $light-shades-color;
+  }
+}
+.btn-dark {
+  @extend .btn;
+}
+.btn-light {
+  @extend .btn;
 }
 
 #main-footer {

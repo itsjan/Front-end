@@ -1,0 +1,34 @@
+// Original source from
+// https://codepen.io/chris22smith/pen/oQWavL
+
+.quote {
+  font-family: "Courier New", Courier, monospace;
+  display: inline-block;
+  margin: 1em;
+  overflow: hidden;
+  blockquote {
+    background-color: $background-color;
+    border-left: solid 2px $dark-accent-color;
+    border-top: solid 2px $dark-accent-color;
+    border-bottom: solid 2px $main-brand-color;
+    border-right: solid 2px $main-brand-color;
+    display: inline-block;
+    margin: 0;
+    padding: 1em;
+    position: relative;
+
+    cite {
+      display: block;
+      font-style: italic;
+      text-align: right;
+      &:before {
+        content: "— ";
+      }
+      color: $dark-accent-color;
+    }
+    > * {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}

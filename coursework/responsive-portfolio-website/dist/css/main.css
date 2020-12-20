@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box; }
 
@@ -105,6 +106,32 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.24s; }
 
+.quote {
+  font-family: "Courier New", Courier, monospace;
+  display: inline-block;
+  margin: 1em;
+  overflow: hidden; }
+  .quote blockquote {
+    background-color: #1e182a;
+    border-left: solid 2px #8f4e63;
+    border-top: solid 2px #8f4e63;
+    border-bottom: solid 2px #7d5d7d;
+    border-right: solid 2px #7d5d7d;
+    display: inline-block;
+    margin: 0;
+    padding: 1em;
+    position: relative; }
+    .quote blockquote cite {
+      display: block;
+      font-style: italic;
+      text-align: right;
+      color: #8f4e63; }
+      .quote blockquote cite:before {
+        content: "— "; }
+    .quote blockquote > * {
+      position: relative;
+      z-index: 1; }
+
 body {
   background: #1e182a;
   color: #eff2f0;
@@ -125,9 +152,6 @@ body {
       height: 100%;
       background: rgba(30, 24, 42, 0.4);
       z-index: -1; }
-
-i {
-  text-shadow: 1.5px 2px 1.5px #1e182a; }
 
 h1,
 h2,
@@ -184,7 +208,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: "bio bio bioimage" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -204,6 +228,29 @@ main {
     background: #2a213a;
     padding: 0.5rem;
     border-bottom: #8f4e63 5px solid; }
+
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  /*                     " three times one fractional" */
+  grid-template-columns: repeat(3, 1fr); }
+  .projects .item {
+    overflow: hidden; }
+    .projects .item img {
+      width: 100%;
+      transform: scale(1);
+      transition: 0.3s ease-in-out; }
+      .projects .item img:hover {
+        width: 100%;
+        transform: scale(1.1); }
+
+.btn, .btn-dark, .btn-light {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background-color: #eff2f0; }
 
 #main-footer {
   text-align: center;
