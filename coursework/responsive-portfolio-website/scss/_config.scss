@@ -12,6 +12,14 @@ $background-opacity: 0.4;
   box-sizing: border-box;
 }
 
+$debug: false;
+
+@if $debug {
+  * {
+    border: solid 1px red;
+  }
+}
+
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }

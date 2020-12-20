@@ -126,12 +126,17 @@ main {
   /*                     " three times one fractional" */
   grid-template-columns: repeat(3, 1fr);
 
-  .item {
-    // Idea for the zoom effect
-    // https://codepen.io/nxworld/pen/ZYNOBZ
+  .project-container {
+    // Positioning text on top of the image
+    // https://www.w3schools.com/howto/howto_css_image_text.asp
+
+    position: relative;
     overflow: hidden;
+    text-align: center;
 
     img {
+      // Idea for the zoom effect
+      // https://codepen.io/nxworld/pen/ZYNOBZ
       width: 100%;
       transform: scale(1);
       transition: 0.3s ease-in-out;
@@ -141,13 +146,23 @@ main {
         transform: scale(1.1);
       }
     }
+    .project-links {
+      background: rgba(lighten($background-color, 30), $background-opacity);
+      border-radius: 10%;
+      color: $dark-shades-color;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
 
 // Button Styles
 
 .btn {
-  display: inline-block;
+  display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;

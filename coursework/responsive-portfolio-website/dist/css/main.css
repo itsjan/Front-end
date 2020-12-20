@@ -234,18 +234,28 @@ main {
   grid-gap: 0.7rem;
   /*                     " three times one fractional" */
   grid-template-columns: repeat(3, 1fr); }
-  .projects .item {
-    overflow: hidden; }
-    .projects .item img {
+  .projects .project-container {
+    position: relative;
+    overflow: hidden;
+    text-align: center; }
+    .projects .project-container img {
       width: 100%;
       transform: scale(1);
       transition: 0.3s ease-in-out; }
-      .projects .item img:hover {
+      .projects .project-container img:hover {
         width: 100%;
         transform: scale(1.1); }
+    .projects .project-container .project-links {
+      background: rgba(100, 80, 139, 0.4);
+      border-radius: 10%;
+      color: #1e182a;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
 
 .btn, .btn-dark, .btn-light {
-  display: inline-block;
+  display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem; }
