@@ -1,4 +1,4 @@
-$primary-color: #1e182a;
+$background-color: #1e182a;
 $dark-shades-color: #1e182a;
 $dark-accent-color: #8f4e63;
 $main-brand-color: #7d5d7d;
@@ -35,6 +35,15 @@ $background-opacity: 0.4;
       }
     }
   }
+}
+
+// Set Text Colour
+
+@function set-shades-color($color) {
+  @if (lightness($color) > 40) {
+    @return $dark-shades-color;
+  }
+  @return $light-shades-color;
 }
 
 // Media Query Mixins
