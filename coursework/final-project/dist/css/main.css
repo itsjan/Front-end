@@ -137,7 +137,20 @@
   padding: 1rem;
   background: #120f1a;
   color: #eff2f0;
-  height: 60px; }
+  height: 80px;
+  bottom: 0px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px; }
+
+#footer-container {
+  height: 1000px;
+  position: relative; }
+
+html,
+body {
+  height: 100%; }
 
 body {
   background: #1e182a;
@@ -149,7 +162,8 @@ body {
   body#bg-img {
     background-image: url("../img/mtfuji.jpeg");
     background-attachment: fixed;
-    background-size: cover; }
+    background-size: cover;
+    overflow: hidden; }
     body#bg-img::after {
       content: "";
       position: absolute;
@@ -199,7 +213,7 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 60px); }
+  min-height: calc(100vh - $footer-height); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {

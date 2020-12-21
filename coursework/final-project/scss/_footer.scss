@@ -3,5 +3,22 @@
   padding: 1rem;
   background: darken($background-color, 5);
   color: set-shades-color($background-color);
-  height: 60px;
+  height: $footer-height;
+
+  bottom: 0px;
+  position: absolute;
+
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+
+#footer-container {
+  height: 1000px;
+  position: relative;
+}
+
+html,
+body {
+  height: 100%;
 }

@@ -8,6 +8,11 @@ $light-shades-color: #eff2f0;
 $show-home-image: true;
 $home-image: url("../img/mtfuji.jpeg");
 $background-opacity: 0.4;
+
+// Footer
+
+$footer-height: 80px;
+
 * {
   box-sizing: border-box;
 }
@@ -30,6 +35,7 @@ $debug: false;
       background-image: $home-image;
       background-attachment: fixed;
       background-size: cover;
+      overflow: hidden;
 
       &::after {
         content: "";

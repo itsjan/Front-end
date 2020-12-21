@@ -2,8 +2,10 @@
 @import "menu";
 @import "quote";
 @import "footer";
+
 // Media queries to the bottom of the file:
 //@import "mobile";
+
 body {
   @include background;
   background: $background-color;
@@ -61,7 +63,7 @@ header {
 main {
   padding: 4rem;
   //height: 100%;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - $footer-height);
 
   .icons {
     margin-top: 1rem;
