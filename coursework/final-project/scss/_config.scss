@@ -48,6 +48,7 @@ $debug: false;
 }
 
 @mixin mediaMd {
+  // iPhone 6/7/8
   @media screen and (max-width: 768px) {
     @content;
   }

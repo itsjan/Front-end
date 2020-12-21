@@ -140,10 +140,12 @@ html {
     font-size: 1.5em; }
 
 @media screen and (max-width: 360px) {
-  .projects {
-    grid-template-columns: repeat(1, 1fr); }
   .hero-banner-quote {
     display: none; } }
+
+@media screen and (max-width: 768px) {
+  .hero-button {
+    width: 300px; } }
 
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
@@ -175,8 +177,8 @@ h4 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-variant: small-caps;
-  font-weight: 200;
-  font-size: 2rem; }
+  font-weight: 800;
+  font-size: 1rem; }
 
 h6 {
   color: #7d5d7d; }
@@ -243,6 +245,10 @@ h6 {
       .projects .project-card .project-links a {
         line-height: 2.5rem;
         color: #6dcedf; }
+
+@media screen and (max-width: 360px) {
+  .projects {
+    grid-template-columns: repeat(1, 1fr); } }
 
 .contact-boxes {
   display: flex;
