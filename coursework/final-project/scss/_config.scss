@@ -9,6 +9,8 @@ $show-home-image: true;
 $home-image: url("../img/mtfuji.jpeg");
 $background-opacity: 0.4;
 
+$max-width: 1200px;
+
 // Footer
 
 $footer-height: 80px;
@@ -55,7 +57,7 @@ $debug: false;
 }
 
 @mixin mediaLg {
-  @media screen and (min-width: 769px) /*and (max-width: 1170px) */ {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
     @content;
   }
 }
