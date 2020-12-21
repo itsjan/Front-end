@@ -35,7 +35,8 @@
   width: 100%;
   background: #120f1a;
   color: white;
-  text-align: center; }
+  text-align: center;
+  z-index: 99; }
 
 /* Add a black background color to the top navigation */
 .topnav {
