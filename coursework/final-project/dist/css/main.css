@@ -28,25 +28,14 @@
       position: relative;
       z-index: 1; }
 
-#main-footer {
-  text-align: center;
-  padding: 1rem;
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background: #120f1a;
-  color: #eff2f0;
-  height: 80px;
-  bottom: 0px;
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  margin-bottom: 0px; }
-
-#footer-container {
-  height: 1000px;
-  position: relative; }
-
-html,
-body {
-  height: 100%; }
+  color: white;
+  text-align: center; }
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -97,6 +86,10 @@ body {
     float: none;
     display: block;
     text-align: left; } }
+
+body,
+html {
+  height: 100%; }
 
 /* The hero image */
 .hero-image {

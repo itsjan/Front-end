@@ -1,24 +1,35 @@
-#main-footer {
-  text-align: center;
-  padding: 1rem;
+// #main-footer {
+//   text-align: center;
+//   padding: 1rem;
+//   background: darken($background-color, 5);
+//   color: set-shades-color($background-color);
+//   height: $footer-height;
+
+//   bottom: 0px;
+//   position: absolute;
+
+//   left: 0px;
+//   right: 0px;
+//   margin-bottom: 0px;
+// }
+
+// #footer-container {
+//   height: 1000px;
+//   position: relative;
+// }
+
+// html,
+// body {
+//   height: 100%;
+// }
+
+// https://www.w3schools.com/howto/howto_css_fixed_footer.asp
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background: darken($background-color, 5);
-  color: set-shades-color($background-color);
-  height: $footer-height;
-
-  bottom: 0px;
-  position: absolute;
-
-  left: 0px;
-  right: 0px;
-  margin-bottom: 0px;
-}
-
-#footer-container {
-  height: 1000px;
-  position: relative;
-}
-
-html,
-body {
-  height: 100%;
+  color: white;
+  text-align: center;
 }
