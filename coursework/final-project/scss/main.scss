@@ -1,10 +1,13 @@
 @import "config";
 @import "quote";
 @import "footer";
-@import "topnav"; // Media queries to the bottom of the file:
+@import "topnav";
+@import "hero-image";
+
+// Media queries to the bottom of the file:
 //@import "mobile";
 body {
-  @include background;
+  //@include background;
   background: $background-color;
   color: set-shades-color($background-color);
   height: 100%;
@@ -24,7 +27,7 @@ h3 {
 
   &.lg-heading {
     font-size: 6rem;
-    color: $main-brand-color;
+    color: $light-shades-color;
   }
 
   &.sm-heading {
