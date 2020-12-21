@@ -41,7 +41,8 @@ $debug: false;
 // Media Query Mixins
 
 @mixin mediaSm {
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 360px) {
+    // Galaxy Fold, Moto G4
     @content;
   }
 }
