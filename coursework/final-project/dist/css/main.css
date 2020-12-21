@@ -7,7 +7,7 @@ blockquote {
   color: #eff2f0;
   border-left: 2px solid #6dcedf;
   margin: 0.5em 0px;
-  padding: 0.5em 0px;
+  padding: 0.5em 10px;
   quotes: "“" "”" "‘" "’"; }
 
 blockquote:before {
