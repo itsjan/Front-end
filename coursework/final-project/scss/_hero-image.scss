@@ -65,13 +65,15 @@ html {
   background-color: rgba($background-color, 0.8);
 }
 
-@include mediaSm {
-  .hero-banner-quote {
-    display: none;
-  }
+.hero-banner-quote {
+  display: none;
 }
 
 @include mediaMd {
+  .hero-banner-quote {
+    display: block;
+  }
+
   .hero-button {
     width: 300px;
   }

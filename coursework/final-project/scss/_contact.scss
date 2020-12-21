@@ -6,15 +6,21 @@
   margin-top: 1rem;
 
   div {
-    //font-size: 1.5rem;
-    //border: 3px white solid;
-    //padding: 1.5rem 2.5rem;
     padding: 0.25rem 2.5rem;
     margin-bottom: 3rem;
     @include easeOut;
-    // Mobile first .. you can not hover find a finger
-    // &:hover {
-    //   padding: 0.5rem 1.5rem;
-    //   background: $dark-shades-color;
+  }
+
+  @include mediaLg {
+    font-size: 1.5rem;
+    div {
+      border: 3px white solid;
+      padding: 1.5rem 2.5rem;
+    }
+
+    &:hover {
+      padding: 0.5rem 1.5rem;
+      background: $dark-shades-color;
+    }
   }
 }
