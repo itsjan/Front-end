@@ -2,9 +2,9 @@
 // https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/
 
 blockquote {
-  background: $main-brand-color;
+  background: lighten($background-color, 5);
   color: $light-shades-color;
-  border-left: 2px solid $dark-accent-color;
+  border-left: 2px solid $light-accent-color;
   //margin: 1.5em 10px;
   margin: 0.5em 0px;
   //padding: 0.5em 10px;
@@ -12,10 +12,9 @@ blockquote {
   quotes: "\201C""\201D""\2018""\2019";
 }
 blockquote:before {
-  color: #ccc;
+  color: $light-accent-color;
   content: open-quote;
-  //font-size: 4em;
-  font-size: 2em;
+  font-size: 4em;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;

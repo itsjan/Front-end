@@ -3,17 +3,17 @@
   box-sizing: border-box; }
 
 blockquote {
-  background: #7d5d7d;
+  background: #2a213a;
   color: #eff2f0;
-  border-left: 2px solid #8f4e63;
+  border-left: 2px solid #6dcedf;
   margin: 0.5em 0px;
   padding: 0.5em 0px;
   quotes: "“" "”" "‘" "’"; }
 
 blockquote:before {
-  color: #ccc;
+  color: #6dcedf;
   content: open-quote;
-  font-size: 2em;
+  font-size: 4em;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em; }
@@ -40,9 +40,10 @@ blockquote p {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #1e182a;
+  background-color: #7d5d7d;
   overflow: hidden;
-  height: 2 rem; }
+  height: 2 rem;
+  box-shadow: 0 2px 4px 2px rgba(20, 20, 20, 0.562); }
 
 /* Style the links inside the navigation bar */
 .topnav a {

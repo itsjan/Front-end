@@ -1,9 +1,10 @@
 // https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: $background-color;
+  background-color: $main-brand-color;
   overflow: hidden;
   height: 2 rem;
+  box-shadow: 0 2px 4px 2px rgba(20, 20, 20, 0.562);
 }
 
 /* Style the links inside the navigation bar */
