@@ -1,0 +1,7 @@
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($background-color, 5);
+  color: set-shades-color($background-color);
+  height: 60px;
+}

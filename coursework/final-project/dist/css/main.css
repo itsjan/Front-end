@@ -132,6 +132,13 @@
       position: relative;
       z-index: 1; }
 
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #120f1a;
+  color: #eff2f0;
+  height: 60px; }
+
 body {
   background: #1e182a;
   color: #eff2f0;
@@ -261,13 +268,6 @@ main {
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background-color: #eff2f0; }
-
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #120f1a;
-  color: #eff2f0;
-  height: 60px; }
 
 .boxes {
   display: flex;

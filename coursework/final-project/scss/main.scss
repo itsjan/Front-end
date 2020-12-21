@@ -1,9 +1,9 @@
 @import "config";
 @import "menu";
 @import "quote";
+@import "footer";
 // Media queries to the bottom of the file:
 //@import "mobile";
-
 body {
   @include background;
   background: $background-color;
@@ -175,14 +175,6 @@ main {
 }
 .btn-light {
   @extend .btn;
-}
-
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: darken($background-color, 5);
-  color: set-shades-color($background-color);
-  height: 60px;
 }
 
 // Contact Page
