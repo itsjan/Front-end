@@ -152,21 +152,30 @@ p {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #eff2f0;
   margin: 0;
   font-weight: 400;
-  /*           x   y   blur color */
-  text-shadow: 1.5px 2px 1.5px #1e182a; }
+  /*           x   y   blur color */ }
 
 h1 {
-  font-family: "Hind", sans-serif;
+  text-shadow: 1.5px 2px 1.5px #1e182a;
   font-size: 2rem; }
 
 h2,
 h3,
+h4,
 h6 {
   font-size: 1.25rem; }
+
+h4 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-variant: small-caps;
+  font-weight: 200;
+  font-size: 2rem; }
 
 h6 {
   color: #7d5d7d; }
@@ -203,25 +212,36 @@ h6 {
   grid-gap: 0.7rem;
   /*                     " three times one fractional" */
   grid-template-columns: repeat(3, 1fr); }
-  .projects .project-container {
+  .projects .project-card {
     position: relative;
     overflow: hidden;
-    text-align: center; }
-    .projects .project-container img {
+    text-align: center;
+    border: 1px solid #6dcedf;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 1px 1px 0 #eff2f0;
+    transition: 0.3s; }
+    .projects .project-card .project-image {
       width: 100%;
       transform: scale(1);
       transition: 0.3s ease-in-out; }
-      .projects .project-container img:hover {
+      .projects .project-card .project-image:hover {
         width: 100%;
         transform: scale(1.1); }
-    .projects .project-container .project-links {
-      background: rgba(100, 80, 139, 0.4);
-      border-radius: 10%;
-      color: #1e182a;
+    .projects .project-card .project-heading {
       position: absolute;
-      top: 50%;
+      top: 10%;
       left: 50%;
-      transform: translate(-50%, -50%); }
+      transform: translate(-50%, -50%);
+      background: rgba(30, 24, 42, 0.5);
+      width: 100%; }
+    .projects .project-card .project-links {
+      display: grid;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      color: #eff2f0; }
+      .projects .project-card .project-links a {
+        line-height: 2.5rem;
+        color: #6dcedf; }
 
 .contact-boxes {
   display: flex;
@@ -252,6 +272,7 @@ header {
 
 main {
   padding-top: 4rem;
+  padding-bottom: 5rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   min-height: calc(100vh - $footer-height); }

@@ -8,23 +8,33 @@ p {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: $light-shades-color;
   margin: 0;
   font-weight: 400;
   /*           x   y   blur color */
-  text-shadow: 1.5px 2px 1.5px $dark-shades-color;
 }
 
 h1 {
-  font-family: "Hind", sans-serif;
+  text-shadow: 1.5px 2px 1.5px $dark-shades-color;
   font-size: 2rem;
 }
 
 h2,
 h3,
+h4,
 h6 {
   font-size: 1.25rem;
+}
+
+h4 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-variant: small-caps;
+  font-weight: 200;
+  font-size: 2rem;
 }
 
 h6 {
