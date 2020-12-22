@@ -11,10 +11,6 @@ $background-opacity: 0.4;
 
 $max-width: 1200px;
 
-// Footer
-
-$footer-height: 80px;
-
 * {
 	box-sizing: border-box;
 }
@@ -56,4 +52,12 @@ $debug: false;
 	@media screen and (min-width: 1171px) {
 		@content;
 	}
+}
+
+// Footer
+
+$footer-height: 80px;
+
+@include mediaLg {
+	$footer-height: 90px;
 }

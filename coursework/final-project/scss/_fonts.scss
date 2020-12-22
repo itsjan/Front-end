@@ -2,17 +2,23 @@ body {
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+body,
 p {
 	font-size: 1rem;
 	@include mediaMd {
 		font-sizr: 1.2rem;
 	}
 	@include mediaLg {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 	}
 	include mediaXl {
 		font-size: 2rem;
 	}
+}
+
+footer {
+	font-size: 1rem;
+	color: $dark-accent-color;
 }
 
 h1,
@@ -31,6 +37,8 @@ h1 {
 	font-size: 2rem;
 	@include mediaLg {
 		font-size: 4rem;
+		line-height: 1;
+		margin-bottom: 1rem;
 	}
 }
 
