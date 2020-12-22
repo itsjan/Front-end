@@ -18,6 +18,11 @@ By Jan Kaiponen
 
 Here's a link to my learning diary.
 
+## Project
+
+Final project published in Github Pages.
+https://itsjan.github.io/Front-end/
+
 
 
 
