@@ -5,6 +5,10 @@ Software Development Skills: Front-End 2020-21
 
 By Jan Kaiponen
 
+🧿See [live version](https://itsjan.github.io/Front-end/).
+
+̇![final_project](/assets/final_project.png)
+
 ## Learning objectives:
 * SASS
   * variables
@@ -22,7 +26,6 @@ Here's a link to my learning diary.
 
 Final project published in Github Pages.
 https://itsjan.github.io/Front-end/
-
 
 
 
