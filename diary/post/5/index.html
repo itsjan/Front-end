@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Improving upon the tutorial project &middot; LUT Front-End Course Learning Diary</title>
+
+		
+  		<link rel="stylesheet" href="/Front-end/diary/css/style.css">
+		<link rel="stylesheet" href="/Front-end/diary/css/fonts.css">
+		<link rel="stylesheet" href="/Front-end/diary/css/custom.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/Front-end/diary/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/Front-end/diary/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/Front-end/diary/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="LUT Front-End Course Learning Diary" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/Front-end/diary/">
+					<h2 class="nav-title">LUT Front-End Course Learning Diary</h2>
+				</a>
+				<ul>
+    
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Jan Kaiponen
+        <br>
+        <span>on&nbsp;</span><time datetime="2020-12-21 10:29:49 &#43;0200 EET">December 21, 2020</time>
+</div>
+
+		<h1 class="post-title">Improving upon the tutorial project</h1>
+<div class="post-line"></div>
+
+		
+
+		<p>I am going to archive the tutorial project and try to improve some of the designg flaws. Some of the biggest problems with the design are:</p>
+<ul>
+<li><strong>A portfolio site should have the works displayed up front</strong>. The user needs to navigate to the portfolio using the burger menu.</li>
+<li><strong>Menu options should be visible</strong> The burger menu should be hidden on larger screens, and the menu items should be visible.</li>
+</ul>
+<h2 id="improvements">Improvements</h2>
+<h3 id="footer">Footer</h3>
+<p>I wanted to have the footer on the front page. The large background image allowed scrolling down on the page, which caused the footer to move up. I added <code>overflow: hidden</code> to the background <code>img</code> tag to prevent this.</p>
+<h3 id="responsive-top-navigation">Responsive Top Navigation</h3>
+<p>The site is missing a top navigation on larger screen sizes. I am also going to get rid of the gimmicky button animation.</p>
+<ul>
+<li><strong>Template for topnav</strong> <a href="https://www.w3schools.com/howto/howto_js_topnav_responsive.asp">https://www.w3schools.com/howto/howto_js_topnav_responsive.asp</a></li>
+</ul>
+<h3 id="hero-banner">Hero Banner</h3>
+<p>I want the front page to have a profile picture image with a call-to-action.</p>
+<ul>
+<li>**Template for Hero Image ** <a href="https://www.w3schools.com/howto/howto_css_hero_image.asp">https://www.w3schools.com/howto/howto_css_hero_image.asp</a></li>
+</ul>
+<h3 id="rework-footer">Rework Footer</h3>
+<p>I removed the background, and applied it to the hero banner.</p>
+<p>I noticed that my footer section got broken, and no longer stays in place. I found a simple solution:</p>
+<ul>
+<li>How TO - Fixed Footer <a href="https://www.w3schools.com/howto/howto_css_fixed_footer.asp">https://www.w3schools.com/howto/howto_css_fixed_footer.asp</a></li>
+</ul>
+<h3 id="redundant-style-definitions">Redundant style definitions</h3>
+<p>It is difficult to maintain the styles, as there are redundant style definitions according to the tutorial. <code>lg-heading</code> really is just <code>&lt;h1&gt;</code>. I am going to clean up and delete the redundant class.</p>
+<h3 id="mobile-first">Mobile First</h3>
+<p>It is difficult to maintain the tutorial portfolio because the media queries are deductive. I refactored all font styles in the project, starting from the smalles screen size. While doing this, I also made the scss more modular. The tutorial put most code into <code>main.scss</code> and it was growing rather large.</p>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/Front-end/diary/post/4/" class="left arrow">&#8592;</a>
+		<a href="/Front-end/diary/post/6/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			
+			<span>
+			&copy; <time datetime="2020-12-22 12:32:47.64284 &#43;0200 EET m=&#43;0.069457781">2020</time> Jan Kaiponen. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>

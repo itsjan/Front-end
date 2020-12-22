@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LUT Front-End Course Learning Diary</title>
+    <link>https://itsjan.github.io/Front-end/diary/</link>
+    <description>Recent content on LUT Front-End Course Learning Diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Dec 2020 11:04:46 +0200</lastBuildDate><atom:link href="https://itsjan.github.io/Front-end/diary/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Responsive design</title>
+      <link>https://itsjan.github.io/Front-end/diary/post/6/</link>
+      <pubDate>Tue, 22 Dec 2020 11:04:46 +0200</pubDate>
+      
+      <guid>https://itsjan.github.io/Front-end/diary/post/6/</guid>
+      <description>I decided to refactor media queries to use min-width only instead of the ranges in the tutorial project.</description>
+    </item>
+    
+    <item>
+      <title>Improving upon the tutorial project</title>
+      <link>https://itsjan.github.io/Front-end/diary/post/5/</link>
+      <pubDate>Mon, 21 Dec 2020 10:29:49 +0200</pubDate>
+      
+      <guid>https://itsjan.github.io/Front-end/diary/post/5/</guid>
+      <description>I am going to archive the tutorial project and try to improve some of the designg flaws. Some of the biggest problems with the design are:
+ A portfolio site should have the works displayed up front. The user needs to navigate to the portfolio using the burger menu. Menu options should be visible The burger menu should be hidden on larger screens, and the menu items should be visible.  Improvements Footer I wanted to have the footer on the front page.</description>
+    </item>
+    
+    <item>
+      <title>My thoughts on Responsive and Mobile-First</title>
+      <link>https://itsjan.github.io/Front-end/diary/post/4/</link>
+      <pubDate>Sun, 20 Dec 2020 10:09:55 +0200</pubDate>
+      
+      <guid>https://itsjan.github.io/Front-end/diary/post/4/</guid>
+      <description>Part VI YouTube Part VI
+Objectives  Create a one column layout for the Work page Use Flexbox for the Contact page  Block Quotes Learned about the blockquote element.
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote
+For what I have learned previously, Mobile-first responsive design should start from the smallest screen, and then applying styles for larger screens. Traversy started with the desktop version, and then applied styles for the smaller screens.
+I&amp;rsquo;d like to improve the usability of this Portfolio project;</description>
+    </item>
+    
+    <item>
+      <title>CSS Grid Layout</title>
+      <link>https://itsjan.github.io/Front-end/diary/post/3/</link>
+      <pubDate>Sat, 19 Dec 2020 20:44:22 +0200</pubDate>
+      
+      <guid>https://itsjan.github.io/Front-end/diary/post/3/</guid>
+      <description>Part V YouTube Part V
+Objectives  Build the about page using a grid layout Create media queries to add responsiveness to small screens  Grid Layout This is the first time I learned about the Grid Layout. This is much more simple that what I&amp;rsquo;ve seen and used before.
+ CSS Grid Layout https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout  </description>
+    </item>
+    
+    <item>
+      <title>Responsive Portfolio Website Part II &amp; III &amp; IV</title>
+      <link>https://itsjan.github.io/Front-end/diary/post/2/</link>
+      <pubDate>Fri, 18 Dec 2020 11:17:17 +0200</pubDate>
+      
+      <guid>https://itsjan.github.io/Front-end/diary/post/2/</guid>
+      <description>Part II YouTube Part II
+Objectives  Create the homepage HTML markup Create the core Sass/CSS for the project Use Sass variables, nesting, mixins and includes, and import partials  I finished working on the main page of the portfolio project. I have done similar tutorials in the past, nothing surprises me here.
+I played around with some color tools online, changed the fonts, etc. I used my own variable naming for the colors in the _config.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to workflow and sass</title>
+      <link>https://itsjan.github.io/Front-end/diary/post/1/</link>
+      <pubDate>Thu, 17 Dec 2020 19:42:54 +0200</pubDate>
+      
+      <guid>https://itsjan.github.io/Front-end/diary/post/1/</guid>
+      <description>Part I Objectives  Setting up the dev environment Learn about SASS Learn about responsive design  YouTube Part I
+node-sass &amp;#34;scripts&amp;#34;: { &amp;#34;sass&amp;#34;: &amp;#34;node-sass -w scss/ -o ./dist/css/ --recursive&amp;#34; }, </description>
+    </item>
+    
+    <item>
+      <title>Starting the Course</title>
+      <link>https://itsjan.github.io/Front-end/diary/post/0/</link>
+      <pubDate>Thu, 17 Dec 2020 19:39:30 +0200</pubDate>
+      
+      <guid>https://itsjan.github.io/Front-end/diary/post/0/</guid>
+      <description>I just created a new directory locally, and ran git init on it. I will create a subfolder under coursework for each YouTube tutorial.</description>
+    </item>
+    
+  </channel>
+</rss>
