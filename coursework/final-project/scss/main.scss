@@ -7,8 +7,7 @@
 @import "about";
 @import "work";
 @import "contact";
-// Media queries to the bottom of the file:
-//@import "mobile";
+
 body {
   background: $background-color;
   color: set-shades-color($background-color);
@@ -79,6 +78,14 @@ main {
   @extend .btn;
 }
 
-// Contact Page
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+  }
 
-@import "mobile";
+  h1 {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+}
