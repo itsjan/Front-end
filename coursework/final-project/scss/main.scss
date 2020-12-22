@@ -40,17 +40,7 @@ main {
   //height: 100%;
   min-height: calc(100vh - $footer-height);
 
-  .icons {
-    margin-top: 1rem;
 
-    a {
-      padding: 0.4rem;
-      &:hover {
-        color: $light-accent-color;
-        @include easeOut;
-      }
-    }
-  }
 
   &#home {
     overflow: hidden;
@@ -84,8 +74,5 @@ main {
     text-align: center;
   }
 
-  h1 {
-    line-height: 1;
-    margin-bottom: 1rem;
-  }
+
 }
