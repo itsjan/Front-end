@@ -20,7 +20,7 @@ By Jan Kaiponen
 
 ## Learning Diary
 
-Here's a link to my learning diary.
+Here's a [link to my learning diary](https://itsjan.github.io/Front-end/diary/index.html).
 
 ## Project
 
