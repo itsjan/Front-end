@@ -18,9 +18,10 @@ By Jan Kaiponen
 * Responsive Web Design
 * CSS Grid and Flexbox
 
-## Learning Diary
+## Learning Diary and Link to Video
 
 Here's a [link to my learning diary](https://itsjan.github.io/Front-end/diary/index.html).
+See my project running on [YouTube](https://youtu.be/_P_R969uGSY).
 
 ## Project
 
